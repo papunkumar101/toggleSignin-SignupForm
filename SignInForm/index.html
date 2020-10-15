@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Toggle_SignInSignUpform</title>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="Astyle.css">
+</head>
+
+<body>
+  <div id="container">
+    <img src="Abanner.jpg" alt="banner">
+    <div id="form-container">
+     <div id="botton-container">
+        <button type="button" class="toggle-btn" id="one" onclick="Alogin()">Login</button>
+        <button type="button" class="toggle-btn" id="two" onclick="Aregister()">Register</button>
+     </div>
+     <!--FIRST FORM-->
+     <div id="forms">
+       <form id="first" action="#" method="POST">
+        <input type="text" placeholder="User-Id" name="uid" required style="border-right: 0px;
+  border-left: 0px;
+  border-top: 0px;
+  border-bottom:1px solid #999 ;
+ outline: none;
+  background: transparent;
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;"><br>
+        <input type="password" placeholder="Password" name="upassword" required style="border-right: 0px;
+  border-left: 0px;
+  border-top: 0px;
+  border-bottom:1px solid #999 ;
+ outline: none;
+  background: transparent;
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;"><br><br>
+        <input type="checkbox" class="check-box" checked  style=" padding: 10px 0;
+  margin: 5px 0;"><span style="font-size:12px;">Remember me or my pass.</span><br><br>
+        <button type="submit" class="btn" name="login" >Login</button>
+      </form>
+      
+        
+        <!--SECOND FORM-->
+    <div id="forms">   
+       <form id="second" action="#" method="POST" style="display:none;">
+        <input type="text" placeholder="User-Name" name="uname" required style="border-right: 0px;
+  border-left: 0px;
+  border-top: 0px;
+  border-bottom:1px solid #999 ;
+ outline: none;
+  background: transparent;
+  width: 100%;
+  padding: 5px 0;
+  margin: 2px 0;"><br>
+        <input type="email" placeholder="E-mail Id" name="umail" required style="border-right: 0px;
+  border-left: 0px;
+  border-top: 0px;
+  border-bottom:1px solid #999 ;
+ outline: none;
+  background: transparent;
+  width: 100%;
+  padding: 5px 0;
+  margin: 2px 0;"><br>
+        <input type="password" placeholder="Password" name="upass" required style="border-right: 0px;
+  border-left: 0px;
+  border-top: 0px;
+  border-bottom:1px solid #999 ;
+ outline: none;
+  background: transparent;
+  width: 100%;
+  padding: 5px 0;
+  margin: 2px 0;"><br><br>
+        <input type="checkbox" class="check-box" checked  style="
+  margin: 2px 0;"><span style="font-size:12px;">Agree with your term & cond.</span><br><br>
+        <button type="submit" class="btn" name="submit" >Register</button>
+      </form>
+     </div>
+    </div>
+  </div>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="Ascripts.js"></script>
+</body>
+</html>
